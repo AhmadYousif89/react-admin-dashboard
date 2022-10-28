@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { HomeIcon } from '@heroicons/react/24/solid';
 import { LinkList } from '../side-links.tsx/link-list';
+import img from '../../assets/profile-pic.png';
 
 export const SideMenu = () => {
   return (
@@ -9,7 +10,7 @@ export const SideMenu = () => {
         flex min-h-screen min-w-fit origin-right flex-col bg-sideMenu py-8 px-12 text-xl text-base-color shadow-xl transition-transform duration-500`}>
       <figure className="mx-auto my-8 flex flex-col items-center gap-2">
         <div className="mb-4 h-32 w-32 overflow-hidden rounded-full">
-          <img src="../../assets/profile-pic.png" alt="profile-image" />
+          <img src={img} alt="profile-image" />
         </div>
         <h2 className="text-3xl tracking-wide text-base-color">User Name</h2>
         <p className="text-lg text-second">GM Fancy Admin</p>
