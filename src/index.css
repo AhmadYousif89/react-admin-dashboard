@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --text-color: #ffffffde;
+    --bg-color: #1d1d1f;
+    --bg-color-gray: #3f3f46;
+
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    line-height: 24px;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    background-color: #1d1d1f;
+    color: #ffffffde;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .dark-theme {
+    --text-color: #cfe8f6;
+    --text-color-second: #33d4be;
+    --text-highlight: #3bbfae;
+    --bg-color: #2c2c2f;
+    --bg-side-color: #242726;
+    --bg-color-gray-1: #3f3f46;
+    --bg-color-gray-2: #525252;
+    --fill-color: #ffffffde;
+    --card-bg-color: #404040d7;
+  }
+
+  .light-theme {
+    --text-color: #242424;
+    --text-color-second: #2181b1;
+    --text-highlight: #67b0d4;
+    --bg-color: #f8f9ff;
+    --bg-color-gray-1: #616166;
+    --bg-color-gray-2: #8d8a8a;
+    --bg-side-color: #e6ecef;
+    --fill-color: #616166;
+    --card-bg-color: #2d7498d2;
+  }
+
+  #root {
+    width: 100%;
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+  }
+
+  @media (prefers-color-scheme: light) {
+    :root {
+      background-color: #1d1d1f;
+      color: #ffffffde;
+    }
+  }
+}
+
+@layer components {
+  .icon {
+    @apply h-12 w-12 cursor-pointer rounded-md fill-[var(--fill-color)] p-2 hover:ring-1 hover:ring-indigo-400;
+  }
+}
