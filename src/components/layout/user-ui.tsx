@@ -22,7 +22,7 @@ export const UserUI = () => {
         className="
         relative cursor-pointer overflow-hidden rounded-full p-8 shadow-md ring-2 ring-indigo-400"
         title={`switch to ${
-          theme.mode === 'dark-theme' ? 'dark' : 'light'
+          theme.mode === 'dark-theme' ? 'light' : 'dark'
         } mode`}
         onClick={() => dispatch(toggleAppTheme())}>
         <SunIcon
