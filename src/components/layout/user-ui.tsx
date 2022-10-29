@@ -21,7 +21,9 @@ export const UserUI = () => {
       <li
         className="
         relative cursor-pointer overflow-hidden rounded-full p-8 shadow-md ring-2 ring-indigo-400"
-        title={`${theme.mode === 'dark-theme' ? 'dark' : 'light'} mode`}
+        title={`switch to ${
+          theme.mode === 'dark-theme' ? 'dark' : 'light'
+        } mode`}
         onClick={() => dispatch(toggleAppTheme())}>
         <SunIcon
           className={`
